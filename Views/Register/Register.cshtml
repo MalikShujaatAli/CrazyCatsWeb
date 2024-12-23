@@ -1,0 +1,110 @@
+﻿@model CrazyCatsWeb.Models.User
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #3c85c4; /* Light background for contrast */
+            background-image: url('/img/bg.svg'); /* Path to your background image */
+            background-size: cover; /* Cover the entire viewport */
+            background-repeat: no-repeat; /* Prevent the image from repeating */
+            background-position: center; /* Center the image */
+        }
+
+        .main {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            width: 300px;
+        }
+
+            .main h2 {
+                color: #3c85c4; /* Primary color */
+                margin-bottom: 20px;
+                text-align: center;
+            }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        select {
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        button[type="submit"] {
+            padding: 15px;
+            border-radius: 10px;
+            border: none;
+            background-color: #d19a2e; /* Secondary color */
+            color: white;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+            button[type="submit"]:hover {
+                background-color: #b78a2a; /* Darker shade for hover effect */
+            }
+
+        .text-danger {
+            color: red; /* Error message color */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <h2>Registration Form</h2>
+        <form asp-action="Register" method="post">
+            <label asp-for="Username"></label>
+            <input type="text" asp-for="Username" required />
+
+            <label asp-for="Email"></label>
+            <input type="email" asp-for="Email" required />
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="Password" required />
+
+            <label for="repassword">Re-type Password:</label>
+            <input type="password" id="repassword" name="ConfirmPassword" required />
+
+            <label for="role">Role:</label>
+            <select asp-for="Role" id="role" required>
+                <option value="">Select a role</option>
+                <option value="User ">User </option>
+                <option value="Admin">Admin</option>
+                <option value="Moderator">Moderator</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>

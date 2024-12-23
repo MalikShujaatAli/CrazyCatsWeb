@@ -15,12 +15,14 @@ namespace CrazyCatsWeb.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            return View("Index");
         }
 
-        public IActionResult Privacy()
+       
+
+        public IActionResult About()
         {
-            return View();
+            return RedirectToAction("About");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

@@ -1,0 +1,114 @@
+﻿@model CrazyCatsWeb.Models.User
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #3c85c4; /* Light background for contrast */
+            background-image: url('/img/bg.svg'); /* Path to your background image */
+            background-size: cover; /* Cover the entire viewport */
+            background-repeat: no-repeat; /* Prevent the image from repeating */
+            background-position: center; /* Center the image */
+        }
+
+        .main {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            width: 300px;
+        }
+
+            .main h2 {
+                color: #3c85c4; /* Primary color */
+                margin-bottom: 20px;
+                text-align: center;
+            }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        button[type="submit"] {
+            padding: 15px;
+            border-radius: 10px;
+            border: none;
+            background-color: #d19a2e; /* Secondary color */
+            color: white;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+            button[type="submit"]:hover {
+                background-color: #b78a2a; /* Darker shade for hover effect */
+            }
+
+        .text-danger {
+            color: red; /* Error message color */
+        }
+
+        .links {
+            margin-top: 15px;
+            text-align: center;
+        }
+
+            .links a {
+                color: #3c85c4; /* Primary color */
+                text-decoration: none;
+                margin: 0 10px;
+            }
+
+                .links a:hover {
+                    text-decoration: underline;
+                }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <h2>Login Form</h2>
+        <form asp-action="Login" method="post">
+            <label asp-for="Username"></label>
+            <input type="text" asp-for="Username" required />
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="Password" required />
+
+            <button type="submit">Login</button>
+        </form>
+        <div class="links">
+            <a href="/Register/Register">Register</a>
+            <a href="/Reset/Reset">Forgot Password?</a>
+        </div>
+    </div>
+</body>
+
+</html>

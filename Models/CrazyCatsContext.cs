@@ -55,7 +55,7 @@ public partial class CrazyCatsContext : DbContext
             entity.HasIndex(e => e.Email, "UQ__Users__A9D105348173F258").IsUnique();
 
             entity.Property(e => e.Email).HasMaxLength(100);
-            entity.Property(e => e.PasswordHash).HasMaxLength(256);
+            entity.Property(e => e.Password).HasMaxLength(256);
             entity.Property(e => e.Role)
                 .HasMaxLength(20)
                 .HasDefaultValue("User ");

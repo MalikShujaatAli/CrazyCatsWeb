@@ -1,0 +1,316 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="~/img/pages/icon.png" type="image/png">
+    <title>The Crazy Cats</title>
+    <!-- Bootstrap Css -->
+    <link rel="stylesheet" href="~/vender/bootstrap/css/bootstrap.min.css">
+    <!-- Icofont Css -->
+    <link rel="stylesheet" href="~/vender/icofont/icofont.min.css">
+    <!-- AOS Css -->
+    @*     <link rel="stylesheet" href="~/vender/aos/dist/aos.css">
+ *@    <!-- Remix Icon -->
+    <link rel="stylesheet" href="~/vender/remixicon/remixicon.css">
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="~/css/style.css">
+    <!-- Common Css -->
+    <link rel="stylesheet" href="~/css/common.css">
+</head>
+<body>
+    <!-- Page loading spinner -->
+   @*  <div class="page-loading active">
+        <div class="page-loading-inner">
+            <div class="page-spinner"></div>
+            <span>Loading...</span>
+        </div>
+    </div> *@
+    <div class="paw-pattern">
+        <!-- navbar -->
+        <nav class="navbar osahan-main-nav navbar-expand pets-nav p-0">
+            <div class="container py-lg-0 py-3">
+                <div class="position-relative d-flex align-items-center gap-2 site-brand">
+                    @*                     <i class="ri-baidu-line fs-2 lh-1 text-danger"></i>
+
+                    *@
+                    <div lh-1>
+                        <img height="35px" width="35px" src="~/img/logo.png">
+                    </div>
+
+                    <div class="lh-1">
+                        <h5 class="fw-bold m-0 text-white">Crazy</h5>
+                        <small class="text-white-50">Cats</small>
+                    </div>
+                    <a class="stretched-link" href="/Home/Index"></a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav ms-auto gap-4 m-none">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/Home/Index"><i class="ri-apps-2-line"></i> Home</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="/About/Details">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/Donation/Donation">Donations</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/Contact/Contact">Contact</a></li>
+                    </ul>
+                    <div class="d-flex align-items-center gap-4 ms-auto ms-lg-0 ps-4">
+                        <a href="#" class="link-light d-none d-lg-block"><i class="ri-account-circle-line ri-lg"></i></a>
+                        <a href="#" class="link-light d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="sidebar"><i class="ri-menu-3-line ri-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Header -->
+        <div class="text-black py-5">
+            <div class="container py-5">
+                <div class="row justify-content-center">
+                    <div class="col-6" data-aos="fade-up" data-aos-duration="500">
+                        <div class="text-center">
+                            <nav class="align-items-center justify-content-center d-flex mx-auto">
+                                <ol class="breadcrumb align-items-center justify-content-center gap-1 bg-danger rounded-pill px-3 py-2" data-aos="fade-up" data-aos-duration="500">
+                                    <li class="breadcrumb-item small"><a href="index.html" class="text-white">HOME</a></li>
+                                    <li class="small text-white">/</li>
+                                    <li class="breadcrumb-item small text-white active text-uppercase" aria-current="page">Contact Us</li>
+                                </ol>
+                            </nav>
+                            <h1 class="fw-bold display-1 text-danger" data-aos="fade-up" data-aos-duration="600">Contact Us</h1>
+                            <p class="lead text-dark">Nulla eleifend pulvinar purus, molestie euismod odio imperdiet ac. Ut sit amet erat nec nibh rhoncus varius in non lorem.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container py-5">
+                <div class="row g-4">
+                    <div class="col-lg-3 col-12">
+                        <div class="text-center" data-aos="fade-up" data-aos-duration="1300">
+                            <i class="ri-map-pin-2-line ri-3x"></i>
+                            <div class="pt-2">
+                                <h5 class="fw-bold">Our Office</h5>
+                                <p class="text-muted mb-0">9016 Goldfield StreetSouth Richmond Hill, New York 11419</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-12">
+                        <div class="text-center" data-aos="fade-up" data-aos-duration="1300">
+                            <i class="ri-mail-line ri-3x"></i>
+                            <div class="pt-2">
+                                <h5 class="fw-bold">Email address</h5>
+                                <p class="text-muted mb-0">
+                                    <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="e08598818d908c85a0878d81898cce838f8d">[email&#160;protected]</a><br>
+                                    <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="c8a1a6aea788afa5a9a1a4e6aba7a5">[email&#160;protected]</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-12">
+                        <div class="text-center" data-aos="fade-up" data-aos-duration="1000">
+                            <i class="ri-time-line ri-3x"></i>
+                            <div class="pt-2">
+                                <h5 class="fw-bold">Open Hours</h5>
+                                <p class="text-muted mb-0">
+                                    Monday-Saturday 8 am – 6pm<br>
+                                    Sunday 11am – 4pm
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-12">
+                        <div class="text-center" data-aos="fade-up" data-aos-duration="1300">
+                            <i class="ri-phone-line ri-3x"></i>
+                            <div class="pt-2">
+                                <h5 class="fw-bold">Phone Number</h5>
+                                <p class="text-muted mb-0">
+                                    +(123) 456 789<br>
+                                    +(123) 456 789
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact form -->
+    <div class="py-5">
+        <div class="container py-5">
+            <div class="row align-items-center g-54 g-md-5">
+                <div class="col-lg-6 col-12">
+                    <img src="~/img/newsletter.png alt="contacat-img" class="img-fluid rounded-5" data-aos="zoom-in-down" data-aos-duration="1000">
+                </div>
+                <div class="col-lg-6 col-12">
+                    <div class="mb-5" data-aos="fade-left" data-aos-duration="1000">
+                        <h1 class="fw-bold pb-2">Let’s keep in touch</h1>
+                        <p class="text-secondary-emphasis mb-0">In consequat, quam id sodales hendrerit, eros mi lacinia risus neque tristique augueproin tempus urna congue elementum.</p>
+                    </div>
+                    <form class="form" data-aos="fade-left" data-aos-duration="1000">
+                        <div class="mb-4">
+                            <label for="name" class="form-label">First &amp; Last Name</label>
+                            <input type="text" class="form-control bg-light rounded-0 border-0" id="name" placeholder="Enter your name">
+                        </div>
+                        <div class="mb-4">
+                            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                            <input type="email" class="form-control bg-light rounded-0 border-0" id="exampleFormControlInput1" placeholder="name@example.com">
+                        </div>
+                        <div class="mb-4">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" class="form-control bg-light rounded-0 border-0" id="subject" placeholder="Enter your subject">
+                        </div>
+                        <div class="mb-4">
+                            <label for="exampleFormControlMessage" class="form-label">Comment or Message *</label>
+                            <textarea class="form-control bg-light rounded-0 border-0" id="exampleFormControlMessage" rows="6" placeholder="Enter your comment"></textarea>
+                        </div>
+                        <a href="#" class="btn btn-danger btn-lg rounded-pill">Send Messaege</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Newsletter Updates -->
+    <div class="py-0 bg-warning-subtle">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="py-5 py-lg-0" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="row align-items-center justify-content-between">
+                            <div class="col-lg-6 col-12">
+                                <div class="text-center text-md-start">
+                                    <div class="mb-4">
+                                        <h1 class="fw-bold text-black">Newsletter Updates</h1>
+                                        <p>Enter your email address below to subscribe to our newsletter.</p>
+                                    </div>
+                                    <form class="d-grid d-md-flex gap-3">
+                                        <input class="form-control rounded-pill py-3 px-4 shadow-none border-0" type="text" placeholder="Email address" aria-label="email">
+                                        <button class="btn btn-danger rounded-pill py-2 px-5">Subscribe</button>
+                                    </form>
+                                    <p class="text-secondary-emphasis pt-3 mb-0">Your privacy is our policy.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-12 d-none d-lg-block">
+                                <img src="~/img/newsletter.png" alt="newsletter-dog" class="img-fluid mt-n6">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer class="bg-footer text-white">
+        <div class="container py-5 top-footer">
+            <div class="row g-4 py-4">
+                <div class="col-lg-3">
+                    <h5 class="fw-bold pb-3">Categories</h5>
+                    <ul class="list-unstyled d-grid gap-2 text-white-50">
+                        <li class="text-secondary-emphasis"><a href="#">Costumers</a> (5)</li>
+                        <li class="text-secondary-emphasis"><a href="#">Food</a> (3)</li>
+                        <li class="text-secondary-emphasis"><a href="#">Toys</a> (3)</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <h5 class="fw-bold pb-3">Contacts</h5>
+                    <ul class="list-unstyled d-grid gap-2 text-white-50">
+                        <li>Phone: +1800-964-152</li>
+                        <li>Fax: +1800-964-152</li>
+                        <li>Email: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="fa9f829b978a969fba9d979b9396d4999597">[email&#160;protected]</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-12">
+                    <h5 class="fw-bold pb-3">Opening Hours</h5>
+                    <ul class="list-unstyled d-grid gap-2 text-white-50">
+                        <li>Mon - Fri: 10am - 8pm</li>
+                        <li>Sat: 10am - 4pm</li>
+                        <li>Sun: 10am - 6pm</li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-12 ps-lg-5">
+                    <div class="mb-4">
+                        <h5 class="fw-bold pb-3">Sign up for our newsletter</h5>
+                        <p class="text-white-50">Get the latest deals and offers right to your inbox.</p>
+                    </div>
+                    <form class="d-flex overflow-hidden rounded-pill">
+                        <input class="form-control border-0 rounded-0 py-2 px-4" type="text" placeholder="Enter Email Address" aria-label="subscribe"> <button class="btn btn-danger rounded-0 py-2 px-4" type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="border-white border-top border-opacity-25 py-4 footer-app">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-auto">
+                        <div class="d-flex align-items-center gap-3">
+                            <p class="m-0 text-white-50 small pe-2">Payment Partners</p>
+                            <div class="d-flex align-items-center gap-3">
+                                <i class="ri-paypal-line"></i> <i class="ri-visa-line fs-3"></i> <i class="ri-mastercard-line"></i> <i class="ri-bit-coin-line"></i> <i class="ri-bank-card-line"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="d-flex align-items-center justify-content-end gap-2">
+                            <p class="m-0 text-white-50 small pe-2">Get deliveries with App</p>
+                            <div class="d-flex align-items-center gap-3">
+                                <a class="text-white" href="#"><i class="ri-apple-line"></i></a> <a class="text-white" href="#"><i class="ri-google-play-line"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-light py-4 footer-copyright">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-auto">
+                        <p class="text-center text-muted m-0">Copyright © <a href="#" class="text-black">Website Name</a> 2025</p>
+                    </div>
+                    <div class="col-auto">
+                        <div class="d-flex align-items-center gap-3 social-links">
+                            <p class="m-0 text-muted pe-1">Follow us</p>
+                            <a href="#" class="link-secondary"><i class="ri-facebook-circle-fill"></i></a> <a href="#" class="link-secondary"><i class="ri-twitter-fill"></i></a>
+                            <a href="#" class="link-secondary"><i class="ri-instagram-fill"></i></a> <a href="#" class="link-secondary"><i class="ri-mail-fill"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--nav Sidebar -->
+    <div class="offcanvas offcanvas-end bg-dark border-0 text-white" tabindex="-1" id="sidebar">
+        <div class="offcanvas-header d-flex justify-content-between">
+            <div class="position-relative d-flex align-items-center gap-2 site-brand">
+                <i class="ri-baidu-line fs-2 lh-1 text-white"></i>
+                <div class="lh-1">
+                    <h5 class="fw-bold m-0 text-white">The Crazy</h5>
+                    <small class="text-white-50">Cats</small>
+                </div>
+                <a class="stretched-link" href="index.html"></a>
+            </div>
+            <a href="#" class="text-white" data-bs-dismiss="offcanvas" aria-label="Close"><i class="ri-close-line ri-lg"></i></a>
+        </div>
+        <div class="offcanvas-body">
+            <div class="sidebar-nav">
+                <ul class="navbar-nav justify-content-end flex-grow-1">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html"><i class="ri-apps-2-line"></i> Home</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="/About/Details">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Donation/Donation">Donations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Contact/Contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Bootsrap Bundle Js -->
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="vender/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Jquery Js -->
+    <script src="vender/jquery/jquery-3.6.4.min.js"></script>
+    <!-- AOS Js -->
+    <script src="vender/aos/dist/aos.js"></script>
+    <!-- Custom Js -->
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,488 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/img/pages/icon.png" type="image/png">
+    <title>Crazy Cats</title>
+    <!-- Bootstrap Css -->
+    <link rel="stylesheet" href="~/vender/bootstrap/css/bootstrap.min.css">
+    <!-- Icofont Css -->
+    <link rel="stylesheet" href="~/vender/icofont/icofont.min.css">
+    <!-- AOS Css -->
+
+    <!-- Remix Icon -->
+    <link rel="stylesheet" href="~/vender/remixicon/remixicon.css">
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="~/css/style.css">
+    <!-- Common Css -->
+    <link rel="stylesheet" href="~/css/common.css">
+</head>
+<body>
+    <!-- Page loading spinner -->
+   @*  <div class="page-loading active">
+        <div class="page-loading-inner">
+            <div class="page-spinner"></div>
+            <span>Loading...</span>
+        </div>
+    </div> *@
+    <div class="paw-pattern">
+        <!-- navbar -->
+        <nav class="navbar osahan-main-nav navbar-expand pets-nav p-0">
+            <div class="container py-lg-0 py-3">
+                <div class="position-relative d-flex align-items-center gap-2 site-brand">
+@*                     <i class="ri-baidu-line fs-2 lh-1 text-danger"></i>
+
+ *@                    
+                     <div lh-1  >
+                        <img height="35px" width="35px" src="~/img/logo.png">
+                        </div>
+
+ <div class="lh-1">
+                        <h5 class="fw-bold m-0 text-white">Crazy</h5>
+                        <small class="text-white-50">Cats</small>
+                    </div>
+                    <a class="stretched-link" href="/Home/Index"></a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav ms-auto gap-4 m-none">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/Home/Index"><i class="ri-apps-2-line"></i> Home</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="/About/Details">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/Donation/Donation">Donations</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/Contact/Contact">Contact</a></li>
+                    </ul>
+                    <div class="d-flex align-items-center gap-4 ms-auto ms-lg-0 ps-4">
+                        <a href="#" class="link-light d-none d-lg-block"><i class="ri-account-circle-line ri-lg"></i></a>
+                        <a href="#" class="link-light d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="sidebar"><i class="ri-menu-3-line ri-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Header -->
+        <div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-8 col-12">
+                        <div class="text-center" data-aos="fade-up" data-aos-duration="1300">
+                            <div>
+                                <div class="text-center py-5 mt-md-5">
+                                    <nav class="align-items-center justify-content-center d-flex mx-auto">
+                                        <ol class="breadcrumb align-items-center justify-content-center gap-1 bg-danger rounded-pill px-3 py-2" data-aos="fade-up" data-aos-duration="500">
+                                            <li class="breadcrumb-item small"><a href="index.html" class="text-white">HOME</a></li>
+                                            <li class="small text-white">/</li>
+                                            <li class="breadcrumb-item small text-white active text-uppercase" aria-current="page">About Us</li>
+                                        </ol>
+                                    </nav>
+                                    <h1 class="fw-bold display-1 text-danger" data-aos="fade-up" data-aos-duration="600">About Us</h1>
+                                    <p class="lead text-dark m-0">
+                                        Nulla eleifend pulvinar purus, molestie euismod <br>
+                                        odio imperdiet ac. Ut sit amet erat nec nibh rhoncus varius in non lorem.
+                                    </p>
+                                </div>
+                            </div>
+                            <img src="~/img/about-us-hero-pets.png" alt="header" class="img-fluid about-us-hero-pets">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- We are passionate -->
+    <div class="py-5 bg-success">
+        <div class="container py-4 text-center">
+            <div class="row g-5">
+                <div class="col-lg-3 col-12" data-aos="fade-right" data-aos-duration="500">
+                    <div class="p-0">
+                        <i class="icofont-dog display-4 bg-success benifits-icon text-white rounded-0"></i>
+                        <h4 class="fw-bold pb-2 mt-4 text-white">Dog Food</h4>
+                        <p class="mb-0 text-white">Integer at faucibus urna. Nullamimperdiet, nec elementum diam elementum. Etiam elementum euismod commodo.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-12" data-aos="fade-left" data-aos-duration="600">
+                    <div class="p-0">
+                        <i class="icofont-cat-alt-3 display-4 bg-success benifits-icon text-white rounded-0"></i>
+                        <h4 class="fw-bold pb-2 mt-4 text-white">Cat Food</h4>
+                        <p class="mb-0 text-white">Integer at faucibus urna. Nullamimperdiet, nec elementum diam elementum. Etiam elementum euismod commodo.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-12" data-aos="fade-right" data-aos-duration="700">
+                    <div class="p-0">
+                        <i class="icofont-rabbit display-4 bg-success benifits-icon text-white rounded-0"></i>
+                        <h4 class="fw-bold pb-2 mt-4 text-white">Rabbit Food</h4>
+                        <p class="mb-0 text-white">Integer at faucibus urna. Nullamimperdiet, nec elementum diam elementum. Etiam elementum euismod commodo.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-12" data-aos="fade-left" data-aos-duration="800">
+                    <div class="p-0 text-white">
+                        <i class="icofont-birds display-4 bg-success benifits-icon text-white rounded-0"></i>
+                        <h4 class="fw-bold pb-2 mt-4 text-white">Birds Food</h4>
+                        <p class="mb-0 text-white">Integer at faucibus urna. Nullamimperdiet, nec elementum diam elementum. Etiam elementum euismod commodo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- numbers -->
+    <div class="py-5">
+        <div class="container py-4">
+            <div class="row mb-5">
+                <div class="col-12">
+                    <div class="bg-warning p-5 rounded-5">
+                        <div class="row align-items-center g-4 mb-5 pb-4 mt-2">
+                            <div class="col-lg-3 col-md-6 col-12">
+                                <div class="text-center">
+                                    <h1 class="fw-bold display-3 text-black">10+</h1>
+                                    <h5 class="fw-bold mb-0">Years in business</h5>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-12">
+                                <div class="text-center">
+                                    <h1 class="fw-bold display-3 text-black">5k+</h1>
+                                    <h5 class="fw-bold mb-0">Happy pets</h5>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-12">
+                                <div class="text-center">
+                                    <h1 class="fw-bold display-3 text-black">55</h1>
+                                    <h5 class="fw-bold mb-0">Employees</h5>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-12">
+                                <div class="text-center">
+                                    <h1 class="fw-bold display-3 text-black">20k+</h1>
+                                    <h5 class="fw-bold mb-0">Opening hours</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row g-4 mb-n8">
+                            <div class="col-lg-4 col-12">
+                                <div class="bg-success text-center text-white p-5 h-100 rounded-5" data-aos="flip-left" data-aos-duration="1000">
+                                    <i class="ri-user-smile-line ri-3x"></i>
+                                    <div class="pt-2">
+                                        <h3 class="fw-bold">
+                                            Leading<br>
+                                            Way
+                                        </h3>
+                                        <p class="mb-0">Fusce at nisi eget dolor rhoncus facilisis tempor.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-12">
+                                <div class="bg-success text-center text-white p-5 h-100 rounded-5" data-aos="flip-right" data-aos-duration="1000">
+                                    <i class="ri-baidu-line ri-3x"></i>
+                                    <div class="pt-2">
+                                        <h3 class="fw-bold">
+                                            Our <br>
+                                            Management
+                                        </h3>
+                                        <p class="mb-0">Fusce at nisi eget dolor rhoncus facilisis tempor.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-12">
+                                <div class="bg-success text-center text-white p-5 h-100 rounded-5" data-aos="flip-left" data-aos-duration="1000">
+                                    <i class="ri-heart-line ri-3x"></i>
+                                    <div class="pt-2">
+                                        <h3 class="fw-bold">
+                                            PET<br>
+                                            Love
+                                        </h3>
+                                        <p class="mb-0">Fusce at nisi eget dolor rhoncus facilisis tempor.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Video -->
+    <div class="py-5">
+        <div class="container pt-4">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card text-bg-dark border-0 rounded-5 overflow-hidden" data-aos="zoom-in" data-aos-duration="1000">
+                        <img src="~/img/video.jpg" class="card-img opacity-50" alt="video">
+                        <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                            <a href="#" class="link-light stretched link" data-bs-toggle="modal" data-bs-target="#videoModal"><i class="ri-play-fill display-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- MEET OUR PET FAMILY -->
+    <div class="py-5">
+        <div class="container py-4">
+            <div data-aos="fade-up" data-aos-duration="500" class="row mb-5">
+                <div class="col-6 mx-auto">
+                    <div class="text-center">
+                        <p class="text-secondary-emphasis mb-2 fw-normal">MEET OUR PET FAMILY</p>
+                        <h1 class="fw-bold display-5">
+                            Passionate<br>
+                            About Animals
+                        </h1>
+                        <p class="text-muted mb-3">Maecenas interdum lorem eleifend orci aliquam mollis. Aliquam non rhoncus magna aliquet tincidunt enimut commodo feugiat aecenas</p>
+                        <span class="bg-danger px-5 mx-auto d-flex pb-2 justify-content-center col-1 rounded-pill"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4 text-center team-images">
+                <div class="col-lg-4 col-12">
+                    <div class="card bg-transparent border-0 rounded-0" data-aos="zoom-in" data-aos-duration="1000">
+                        <img src="~/img/team/member-1.jpg" class="card-img-top rounded-5" alt="team">
+                        <div class="card-body px-0">
+                            <h5 class="card-title fw-bold pb-2">Marilyn McDonald</h5>
+                            <p class="card-text mb-0">Phasellus risus turpis, pretium sit amet magna non, molestie ultricies enim, nullam pulvinar felis..</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 d-flex align-items-center justify-content-center gap-3 px-0">
+                            <a href="#"><i class="ri-facebook-box-fill ri-lg"></i></a> <a href="#"><i class="ri-twitter-fill ri-lg"></i></a> <a href="#"><i class="ri-pinterest-fill ri-lg"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12">
+                    <div class="card bg-transparent border-0 rounded-0" data-aos="zoom-in" data-aos-duration="1000">
+                        <img src="~/img/team/member-2.jpg" class="card-img-top rounded-5" alt="team">
+                        <div class="card-body px-0">
+                            <h5 class="card-title fw-bold pb-2">Jerry Banks</h5>
+                            <p class="card-text mb-0">Phasellus risus turpis, pretium sit amet magna non, molestie ultricies enim, nullam pulvinar felis..</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 d-flex align-items-center justify-content-center gap-3 px-0">
+                            <a href="#"><i class="ri-facebook-box-fill ri-lg"></i></a> <a href="#"><i class="ri-twitter-fill ri-lg"></i></a> <a href="#"><i class="ri-pinterest-fill ri-lg"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12">
+                    <div class="card bg-transparent border-0 rounded-0" data-aos="zoom-in" data-aos-duration="1000">
+                        <img src="~/img/team/member-3.jpg" class="card-img-top rounded-5" alt="team">
+                        <div class="card-body px-0">
+                            <h5 class="card-title fw-bold pb-2">Pamela Bailey</h5>
+                            <p class="card-text mb-0">Phasellus risus turpis, pretium sit amet magna non, molestie ultricies enim, nullam pulvinar felis..</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 d-flex align-items-center justify-content-center gap-3 px-0">
+                            <a href="#"><i class="ri-facebook-box-fill ri-lg"></i></a> <a href="#"><i class="ri-twitter-fill ri-lg"></i></a> <a href="#"><i class="ri-pinterest-fill ri-lg"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Get the best animal products -->
+    <div class="bg-new-products py-5">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-12">
+                    <div class="text-center text-white" data-aos="fade-up" data-aos-duration="1300">
+                        <div data-aos="fade-up" data-aos-duration="500" class="row py-4">
+                            <div class="col-6 mx-auto">
+                                <div class="text-center">
+                                    <h5 class="fw-semibold">Get the best animal products</h5>
+                                    <h1 class="fw-bold display-4 mb-3">New Products Every Week</h1>
+                                    <span class="bg-danger px-5 mx-auto d-flex pb-2 justify-content-center col-1 rounded-pill"></span>
+                                    <p class="text-white py-4 lead">Maecenas interdum lorem eleifend orci aliquam mollis. Aliquam non rhoncus magna aliquet tincidunt enimut commodo feugiat aecenas</p>
+
+                                    <a href="#" class="btn btn-danger btn-lg rounded-pill">SHOP NOW</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Popular articles about pets -->
+    <div class="py-5">
+        <div class="container py-4">
+            <div data-aos="fade-up" data-aos-duration="500" class="row mb-5">
+                <div class="col-6 mx-auto">
+                    <div class="text-center">
+                        <p class="text-secondary-emphasis mb-2 fw-normal">WHAT TO READ</p>
+                        <h1 class="fw-bold display-5">Popular Articles</h1>
+                        <p class="text-muted mb-3">Maecenas interdum lorem eleifend orci aliquam mollis. Aliquam non rhoncus magna aliquet tincidunt enimut commodo feugiat aecenas</p>
+                        <span class="bg-danger px-5 mx-auto d-flex pb-2 justify-content-center col-1 rounded-pill"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="card bg-transparent border-0 rounded-5 zoom-img overflow-hidden" data-aos="zoom-in" data-aos-duration="1000">
+                        <a href="#" class="overflow-hidden rounded-5"> <img src="~/img/articles/articles-1.jpg" class="card-img-top rounded-5" alt="articles"> </a>
+                        <div class="card-body px-0">
+                            <a href="#"> <h5 class="card-title fw-bold pb-2">Dapibus Ultrices Iaculis Nunc Commodo</h5> </a>
+                            <p class="card-text"><small class="text-secondary">DECEMBER 2, 2024</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="card bg-transparent border-0 rounded-5 zoom-img overflow-hidden" data-aos="zoom-in" data-aos-duration="1000">
+                        <a href="#" class="overflow-hidden rounded-5"> <img src="~/img/articles/articles-2.jpg" class="card-img-top rounded-5" alt="articles"> </a>
+                        <div class="card-body px-0">
+                            <a href="#"> <h5 class="card-title fw-bold pb-2">Aliquet Porttitor Lacusuctus Accumsan</h5> </a>
+                            <p class="card-text"><small class="text-secondary">DECEMBER 2, 2024</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="card bg-transparent border-0 rounded-5 zoom-img overflow-hidden" data-aos="zoom-in" data-aos-duration="1000">
+                        <a href="#" class="overflow-hidden rounded-5"> <img src="~/img/articles/articles-3.jpg" class="card-img-top rounded-5" alt="articles"> </a>
+                        <div class="card-body px-0">
+                            <a href="#"> <h5 class="card-title fw-bold pb-2">Elementum Tempus Egestas Suspendisse</h5> </a>
+                            <p class="card-text"><small class="text-secondary">DECEMBER 2, 2024</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="card bg-transparent border-0 rounded-5 zoom-img overflow-hidden" data-aos="zoom-in" data-aos-duration="1000">
+                        <a href="#" class="overflow-hidden rounded-5"> <img src="~/img/articles/articles-4.jpg" class="card-img-top rounded-5" alt="articles"> </a>
+                        <div class="card-body px-0">
+                            <a href="#"> <h5 class="card-title fw-bold pb-2">Dignissim Cras Tincidunt Lobortis</h5> </a>
+                            <p class="card-text"><small class="text-secondary">DECEMBER 2, 2024</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer class="bg-footer text-white">
+        <div class="container py-5 top-footer">
+            <div class="row g-4 py-4">
+                <div class="col-lg-3">
+                    <h5 class="fw-bold pb-3">Categories</h5>
+                    <ul class="list-unstyled d-grid gap-2 text-white-50">
+                        <li class="text-secondary-emphasis"><a href="#">Costumers</a> (5)</li>
+                        <li class="text-secondary-emphasis"><a href="#">Food</a> (3)</li>
+                        <li class="text-secondary-emphasis"><a href="#">Toys</a> (3)</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <h5 class="fw-bold pb-3">Contacts</h5>
+                    <ul class="list-unstyled d-grid gap-2 text-white-50">
+                        <li>Phone: +1800-964-152</li>
+                        <li>Fax: +1800-964-152</li>
+                        <li>Email: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="e3869b828e938f86a3848e828a8fcd808c8e">[email&#160;protected]</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-12">
+                    <h5 class="fw-bold pb-3">Opening Hours</h5>
+                    <ul class="list-unstyled d-grid gap-2 text-white-50">
+                        <li>Mon - Fri: 10am - 8pm</li>
+                        <li>Sat: 10am - 4pm</li>
+                        <li>Sun: 10am - 6pm</li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-12 ps-lg-5">
+                    <div class="mb-4">
+                        <h5 class="fw-bold pb-3">Sign up for our newsletter</h5>
+                        <p class="text-white-50">Get the latest deals and offers right to your inbox.</p>
+                    </div>
+                    <form class="d-flex overflow-hidden rounded-pill">
+                        <input class="form-control border-0 rounded-0 py-2 px-4" type="text" placeholder="Enter Email Address" aria-label="subscribe"> <button class="btn btn-danger rounded-0 py-2 px-4" type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="border-white border-top border-opacity-25 py-4 footer-app">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-auto">
+                        <div class="d-flex align-items-center gap-3">
+                            <p class="m-0 text-white-50 small pe-2">Payment Partners</p>
+                            <div class="d-flex align-items-center gap-3">
+                                <i class="ri-paypal-line"></i> <i class="ri-visa-line fs-3"></i> <i class="ri-mastercard-line"></i> <i class="ri-bit-coin-line"></i> <i class="ri-bank-card-line"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="d-flex align-items-center justify-content-end gap-2">
+                            <p class="m-0 text-white-50 small pe-2">Get deliveries with App</p>
+                            <div class="d-flex align-items-center gap-3">
+                                <a class="text-white" href="#"><i class="ri-apple-line"></i></a> <a class="text-white" href="#"><i class="ri-google-play-line"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-light py-4 footer-copyright">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-auto">
+                        <p class="text-center text-muted m-0">Copyright © <a href="#" class="text-black">Website Name</a> 2025</p>
+                    </div>
+                    <div class="col-auto">
+                        <div class="d-flex align-items-center gap-3 social-links">
+                            <p class="m-0 text-muted pe-1">Follow us</p>
+                            <a href="#" class="link-secondary"><i class="ri-facebook-circle-fill"></i></a> <a href="#" class="link-secondary"><i class="ri-twitter-fill"></i></a>
+                            <a href="#" class="link-secondary"><i class="ri-instagram-fill"></i></a> <a href="#" class="link-secondary"><i class="ri-mail-fill"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--nav Sidebar -->
+    <div class="offcanvas offcanvas-end bg-dark border-0 text-white" tabindex="-1" id="sidebar">
+        <div class="offcanvas-header d-flex justify-content-between">
+            <div class="position-relative d-flex align-items-center gap-2 site-brand">
+                <i class="ri-baidu-line fs-2 lh-1 text-white"></i>
+                <div class="lh-1">
+                    <h5 class="fw-bold m-0 text-white">The Crazy</h5>
+                    <small class="text-white-50">Cats</small>
+                </div>
+                <a class="stretched-link" href="index.html"></a>
+            </div>
+            <a href="#" class="text-white" data-bs-dismiss="offcanvas" aria-label="Close"><i class="ri-close-line ri-lg"></i></a>
+        </div>
+        <div class="offcanvas-body">
+            <div class="sidebar-nav">
+                <ul class="navbar-nav justify-content-end flex-grow-1">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html"><i class="ri-apps-2-line"></i> Home</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="/About/Details">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Donation/Donation">Donations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Contact/Contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Video Modal -->
+    <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content bg-transparent border-0 rounded-0">
+                <div class="modal-header d-flex justify-content-end border-0 py-0">
+                    <a href="#" class="link-light" data-bs-dismiss="modal" aria-label="Close"><i class="ri-close-fill ri-2x"></i></a>
+                </div>
+                <div class="modal-body px-5">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://youtu.be/XibMqL6sHo4?si=9cr9hzHz2FacqY0a"
+                                title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootsrap Bundle Js -->
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="vender/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Jquery Js -->
+    <script src="vender/jquery/jquery-3.6.4.min.js"></script>
+    <!-- AOS Js -->
+    @* <script src="vender/aos/dist/aos.js"></script> *@
+    <!-- Custom Js -->
+    <script src="js/script.js"></script>
+</body>
+</html>

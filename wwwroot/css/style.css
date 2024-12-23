@@ -1,0 +1,197 @@
+/*
+Template Name: Petx | Pet Care & Pet Shop Website Template
+Author: Pillarix
+Author URI: https://wrapbootstrap.com/user/pillarix
+Version: 1.0
+*/
+/*
+-- Body
+-- Custom Classes 
+-- Homepage
+-- About 
+-- Footer
+-- Footer
+-- Mobile Media
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100;200;300;400;500;600;700&family=Unbounded:wght@200;300;400;500;600&display=swap');
+
+/* Body */
+body {
+	font-family: 'Onest', sans-serif;
+}
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Unbounded', sans-serif;
+}
+a {
+	text-decoration: none;
+	color: #1b1b1b;
+}
+a:hover {
+	color: #F54A01;
+}
+.pets-nav  a.nav-link {
+	padding-top: 35px !important;
+	padding-bottom: 35px !important;
+	color: #ffffff !important;
+}
+
+/* Custom Classes */
+.team-images .card-img-top {
+	width: 110px;
+	height: 110px;
+	border-radius: 100px !important;
+	object-fit: cover;
+	margin: auto;
+	margin-bottom: 15px;
+}
+.about-us-hero-pets {
+	margin: 0 0 -111px 0;
+}
+.bg-warning-subtle {
+	background-color: #ffcc01 !important;
+}
+.bg-success {
+	background-color: #04c6d8 !important;
+}
+.btn-lg {
+	padding: 11px 28px;
+	font-size: 18px;
+	font-weight: 500;
+}
+.osahan-main-nav.fixed-top {
+	background: #000000 !important;
+}
+.btn-danger {
+	background: hsla(18, 99%, 48%, 1);
+	background: linear-gradient(135deg, hsla(18, 99%, 48%, 1) 0%, hsla(25, 100%, 50%, 1) 100%);
+	background: -moz-linear-gradient(135deg, hsla(18, 99%, 48%, 1) 0%, hsla(25, 100%, 50%, 1) 100%);
+	background: -webkit-linear-gradient(135deg, hsla(18, 99%, 48%, 1) 0%, hsla(25, 100%, 50%, 1) 100%);
+	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F54A01", endColorstr="#FF6A00", GradientType=1 );
+	border-color: #F54A01 !important;
+	color: #fff;
+}
+.btn-danger:hover {
+	background: hsla(18, 99%, 48%, 1);
+	background: linear-gradient(360deg, hsla(18, 99%, 48%, 1) 0%, hsla(25, 100%, 50%, 1) 100%);
+	background: -moz-linear-gradient(360deg, hsla(18, 99%, 48%, 1) 0%, hsla(25, 100%, 50%, 1) 100%);
+	background: -webkit-linear-gradient(360deg, hsla(18, 99%, 48%, 1) 0%, hsla(25, 100%, 50%, 1) 100%);
+	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F54A01", endColorstr="#FF6A00", GradientType=1 );
+	border-color: #F54A01 !important;
+	color: #fff;
+}
+.btn-outline-danger {
+	border-color: #F54A01 !important;
+	color: #F54A01;
+}
+.btn-outline-danger:hover {
+	background-color: #F54A01 !important;
+	border-color: #F54A01 !important;
+	color: #fff;
+}
+.bg-danger {
+	background: hsla(18, 99%, 48%, 1);
+	background: linear-gradient(135deg, hsla(18, 99%, 48%, 1) 0%, hsla(25, 100%, 50%, 1) 100%);
+	background: -moz-linear-gradient(135deg, hsla(18, 99%, 48%, 1) 0%, hsla(25, 100%, 50%, 1) 100%);
+	background: -webkit-linear-gradient(135deg, hsla(18, 99%, 48%, 1) 0%, hsla(25, 100%, 50%, 1) 100%);
+	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F54A01", endColorstr="#FF6A00", GradientType=1 );
+}
+.text-danger {
+	color: #F54A01 !important;
+}
+.text-bg-danger {
+	background-color: #bc5d40 !important;
+}
+.link-danger {
+	color: #F54A01 !important;
+}
+.link-danger:hover {
+	color: #bc5d40 !important;
+}
+.mt-n6 {
+	margin-top: -6rem;
+}
+.mb-n8 {
+	margin-bottom: -8rem;
+}
+.w-40 {
+	width: 40%;
+}
+
+/* Homepage */
+.homepage {
+	background-image: url(../img/bg.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.paw-pattern {
+	background-image: url(../img/inner.png);
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+.zoom-img img {
+	transition: transform .4s;
+}
+.zoom-img:hover img {
+	-ms-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+.testimonial-img {
+	width: 100px;
+	height: 100px;
+	object-fit: cover;
+}
+
+/* About */
+.bg-new-products {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url(../img/bg-animal-products.jpg);
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/* Footer */
+.bg-footer {
+	background-color: #000000;
+}
+.social-icons a {
+	height: 35px;
+	width: 35px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.social-icons a:hover {
+	color: #F54A01 !important;
+	border-color: #F54A01 !important;
+}
+
+/* Footer */
+footer .top-footer a {
+	color: #fff;
+}
+footer .top-footer a:hover {
+	color: #F54A01;
+}
+
+
+
+/* Mobile Media  */
+@media (max-width:992px) {
+	.m-none {
+		display: none;
+	}
+}

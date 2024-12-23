@@ -1,0 +1,90 @@
+﻿@model CrazyCatsWeb.Models.User
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reset Password</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #3c85c4; /* Light background for contrast */
+        }
+
+        .main {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            width: 300px;
+        }
+
+            .main h2 {
+                color: #3c85c4; /* Primary color */
+                margin-bottom: 20px;
+                text-align: center;
+            }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+            font-weight: bold;
+        }
+
+        input[type="password"] {
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        button[type="submit"] {
+            padding: 15px;
+            border-radius: 10px;
+            border: none;
+            background-color: #d19a2e; /* Secondary color */
+            color: white;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+            button[type="submit"]:hover {
+                background-color: #b78a2a; /* Darker shade for hover effect */
+            }
+
+        .text-danger {
+            color: red; /* Error message color */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <h2>Reset Password</h2>
+        <form asp-action="ResetPassword" method="post">
+            <input type="hidden" name="email" value="@Model.Email" /> <!-- Hidden field for email -->
+            <label for="newPassword">New Password:</label>
+            <input type="password" id="newPassword" name="newPassword" required />
+
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required />
+
+            <button type="submit">Reset Password</button>
+        </form>
+    </div>
+</body>
+
+</html>

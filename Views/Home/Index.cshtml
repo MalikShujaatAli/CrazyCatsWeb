@@ -1,8 +1,582 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/img/pages/icon.png" type="image/png">
+    <title>Crazy Cats</title>
+    <!-- Bootstrap Css -->
+    <link rel="stylesheet" href="~/vender/bootstrap/css/bootstrap.min.css">
+    <!-- Icofont Css -->
+    <link rel="stylesheet" href="~/vender/icofont/icofont.min.css">
+    <!-- AOS CSS -->
+    @* <link rel="stylesheet" href="~/vender/aos/dist/aos.css"> *@
+    <!-- Remix Icon -->
+    <link rel="stylesheet" href="~/vender/remixicon/remixicon.css">
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="~/css/style.css">
+    <!-- Common Css -->
+    <link rel="stylesheet" href="~/css/common.css">
+    <!-- AOS JS -->
+    @* <script src="~/vender/aos/dist/aos.js"></script> *@
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+
+   
+
+</head>
+<body>
+    
+    <div class="homepage">
+        <!-- navbar -->
+        <nav class="navbar osahan-main-nav navbar-expand pets-nav p-0">
+            <div class="container py-lg-0 py-3">
+                <div class="position-relative d-flex align-items-center gap-2 site-brand">
+                    <div lh-1  >
+                        <img height="35px" width="35px" src="~/img/logo.png">
+                        </div>
+                    @* <i class="ri-baidu-line fs-2 lh-1 text-danger"></i> *@
+                    <div class="lh-1">
+                        <small class="text-white-50"></small>
+
+                        <h5 class="fw-bold m-0 text-white">The Crazy</h5>
+                        <small class="text-white-50">Cats</small>
+                    </div>
+                    <a class="stretched-link" href="/Home/Index"></a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav ms-auto gap-4 m-none">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/Home/Index"><i class="ri-apps-2-line"></i> Home</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="/About/Details">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/Donation/Donation">Donations</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/Contact/Contact">Contact</a></li>
+                    </ul>
+                    <div class="d-flex align-items-center gap-4 ms-auto ms-lg-0 ps-4">
+                        <a href="#" class="link-light d-none d-lg-block"><i class="ri-account-circle-line ri-lg"></i></a>
+                        <a href="#" class="link-light d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="sidebar"><i class="ri-menu-3-line ri-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Header -->
+        <div class="py-0">
+            <div class="container">
+                <div class="row align-items-center g-4 pb-lg-5">
+                    <div class="col-lg-6 col-12 pb-lg-5 pe-lg-5">
+                        <div class="text-white text-center text-md-start py-5" data-aos="fade-right" data-aos-duration="1000">
+                            <div class="mb-5">
+                                <h6 class="fw-light text-white-50 mb-0">Favourite Place of Animals</h6>
+                                <h1 class="fw-bold display-2 py-2">The Crazy Cats</h1>
+                                <p class="lead pe-lg-5">A shelter that provides every neccessity for a fur baby to surive and a place where animals feel loved.</p>
+                            </div>
+                            <a href="/Donation/Donation" class="btn btn-danger btn-lg rounded-pill">Donate
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12 pb-lg-5">
+                        <img src="/img/newsletter.png" alt="header-img" class="img-fluid d-block mx-auto" data-aos="fade-left" data-aos-duration="1000">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- OFF -->
+    <div class="mt-n6">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="bg-danger text-white p-5 rounded-5">
+                        <div class="row align-items-center justify-content-center g-4">
+                            <div class="col-lg-1 col-12">
+                                <div class="text-center text-md-start"><i class="ri-baidu-line display-3"></i></div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="text-center text-md-start">
+                                    <h4 class="fw-bold">Play your part with us</h4>
+                                    <p class="mb-0 text-white-50">Even a minimal amount can make a differnece.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="text-center text-md-end"><a href="/Donation/Donation" class="btn btn-light btn-lg rounded-pill">Donate</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- category -->
+    <div class="py-5 bg-light">
+        <div class="container py-4">
+            <div data-aos="fade-up" data-aos-duration="500" class="row mb-5">
+                <div class="col-6 mx-auto">
+                    <div class="text-center">
+                        <p class="text-secondary-emphasis mb-2 fw-normal text-uppercase">lorem eleifend orci</p>
+                        <h1 class="fw-bold display-5">Our Guests</h1>
+                        <p class="text-muted mb-3">Maecenas interdum lorem eleifend orci aliquam mollis. Aliquam non rhoncus magna aliquet tincidunt enimut commodo feugiat aecenas</p>
+                        <span class="bg-danger px-5 mx-auto d-flex pb-2 justify-content-center col-1 rounded-pill"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4 category">
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="card border-0 shadow rounded-5 text-center h-100 p-5" data-aos="zoom-in" data-aos-duration="1000">
+                        <div class="card-body">
+                            <i class="icofont-dog display-1 text-danger"></i>
+                            <h4 class="card-title fw-bold py-3 mb-0">
+                                Dogs<br>
+                                
+                            </h4>
+                            <p class="mb-0 small text-muted">Integer at faucibus urna. Nullamimperdiet.</p>
+                            <a href="#" class="stretched-link"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="card border-0 shadow rounded-5 text-center h-100 p-5" data-aos="zoom-in" data-aos-duration="1000">
+                        <div class="card-body">
+                            <i class="icofont-cat-alt-3 display-1 text-danger"></i>
+                            <h4 class="card-title fw-bold py-3 mb-0">
+                                Cats<br>
+                                
+                            </h4>
+                            <p class="mb-0 small text-muted">Integer at faucibus urna. Nullamimperdiet.</p>
+                            <a href="#" class="stretched-link"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="card border-0 shadow rounded-5 text-center h-100 p-5" data-aos="zoom-in" data-aos-duration="1000">
+                        <div class="card-body">
+                            <i class="icofont-rabbit display-1 text-danger"></i>
+                            <h4 class="card-title fw-bold py-3 mb-0">
+                                Other Animals <br>
+                                
+                            </h4>
+                            <p class="mb-0 small text-muted">Integer at faucibus urna. Nullamimperdiet.</p>
+                            <a href="#" class="stretched-link"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="card border-0 shadow rounded-5 text-center h-100 p-5" data-aos="zoom-in" data-aos-duration="1000">
+                        <div class="card-body">
+                            <i class="icofont-birds display-1 text-danger"></i>
+                            <h4 class="card-title fw-bold py-3 mb-0">
+                                Birds<br>
+                                
+                            </h4>
+                            <p class="mb-0 small text-muted">Integer at faucibus urna. Nullamimperdiet.</p>
+                            <a href="#" class="stretched-link"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Best sellers -->
+    <div class="py-5">
+        <div class="container py-4">
+            <div data-aos="fade-up" data-aos-duration="500" class="row mb-5">
+                <div class="col-6 mx-auto">
+                    <div class="text-center">
+                        <p class="text-secondary-emphasis mb-2 fw-normal text-uppercase">ALL-TIME FAVOURITE</p>
+                        <h1 class="fw-bold display-5">Some of our Models</h1>
+                        <span class="bg-danger px-5 mx-auto d-flex pb-2 justify-content-center col-1 rounded-pill"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4 g-md-5">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card bg-transparent border-0 rounded-0 text-center zoom-img" data-aos="zoom-in" data-aos-duration="1000">
+                        <div class="overflow-hidden rounded-5">
+                            <img src="/img/best-seller/product-1.jpg" class="card-img-top rounded-5" alt="product">
+                        </div>
+                        <div class="card-body">
+                            <a href="#"> <h5 class="card-title fw-bold pb-2">Pellentesque Mauris</h5> </a>
+                            <p class="card-text fw-semibold text-danger mb-1">Energetic and Playful</p>
+                            <small class="card-text">Awaits</small>
+                        </div>
+                        <div class="card-footer bg-transparent border-0"><a href="#" class="btn btn-danger rounded-pill py-2 px-4">Adopt</a></div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card bg-transparent border-0 rounded-0 text-center zoom-img" data-aos="zoom-in" data-aos-duration="1000">
+                        <a href="#" class="position-relative">
+                            <div class="overflow-hidden rounded-5">
+                                <img src="/img/best-seller/product-2.jpg" class="card-img-top rounded-5" alt="product"> <span class="badge text-bg-danger rounded-pill p-2 m-3 position-absolute start-0">SALE</span>
+                            </div>
+                        </a>
+                        <div class="card-body">
+                            <a href="#"> <h5 class="card-title fw-bold pb-2">Felis Bibendum</h5> </a>
+                            <p class="card-text fw-semibold text-danger mb-1">$30.00 <del class="small fw-normal text-secondary-emphasis">$45.00</del></p>
+                            <small class="card-text">Toys</small>
+                        </div>
+                        <div class="card-footer bg-transparent border-0"><a href="#" class="btn btn-danger rounded-pill py-2 px-4">Add to cart</a></div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card bg-transparent border-0 rounded-0 text-center zoom-img" data-aos="zoom-in" data-aos-duration="1000">
+                        <div class="overflow-hidden rounded-5">
+                            <img src="/img/best-seller/product-3.jpg" class="card-img-top rounded-5" alt="product">
+                        </div>
+                        <div class="card-body">
+                            <a href="#"> <h5 class="card-title fw-bold pb-2">Integer Malesuada</h5> </a>
+                            <p class="card-text fw-semibold text-danger mb-1">$15.00</p>
+                            <small class="card-text">Costumes</small>
+                        </div>
+                        <div class="card-footer bg-transparent border-0"><a href="#" class="btn btn-danger rounded-pill py-2 px-4">Add to cart</a></div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card bg-transparent border-0 rounded-0 text-center zoom-img" data-aos="zoom-in" data-aos-duration="1000">
+                        <div class="overflow-hidden rounded-5">
+                            <img src="/img/best-seller/product-4.jpg" class="card-img-top rounded-5" alt="product">
+                        </div>
+                        <div class="card-body">
+                            <a href="#"> <h5 class="card-title fw-bold pb-2">Posuere Semper</h5> </a>
+                            <p class="card-text fw-semibold text-danger mb-1">$15.00</p>
+                            <small class="card-text">Carriers</small>
+                        </div>
+                        <div class="card-footer bg-transparent border-0"><a href="#" class="btn btn-danger rounded-pill py-2 px-4">Add to cart</a></div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card bg-transparent border-0 rounded-0 text-center zoom-img" data-aos="zoom-in" data-aos-duration="1000">
+                        <div class="overflow-hidden rounded-5">
+                            <img src="/img/best-seller/product-5.jpg" class="card-img-top rounded-5" alt="product">
+                        </div>
+                        <div class="card-body">
+                            <a href="#"> <h5 class="card-title fw-bold pb-2">Fringilla Magna</h5> </a>
+                            <p class="card-text fw-semibold text-danger mb-1">$15.00</p>
+                            <small class="card-text">Costumes</small>
+                        </div>
+                        <div class="card-footer bg-transparent border-0"><a href="#" class="btn btn-danger rounded-pill py-2 px-4">Add to cart</a></div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card bg-transparent border-0 rounded-0 text-center zoom-img" data-aos="zoom-in" data-aos-duration="1000">
+                        <div class="overflow-hidden rounded-5">
+                            <img src="/img/best-seller/product-6.jpg" class="card-img-top rounded-5" alt="product">
+                        </div>
+                        <div class="card-body">
+                            <a href="#"> <h5 class="card-title fw-bold pb-2">Proin Sagittis</h5> </a>
+                            <p class="card-text fw-semibold text-danger mb-1">$15.00</p>
+                            <small class="card-text">Feed</small>
+                        </div>
+                        <div class="card-footer bg-transparent border-0"><a href="#" class="btn btn-danger rounded-pill py-2 px-4">Add to cart</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Clients Testimonials -->
+    <div class="bg-new-products text-white py-5">
+        <div class="container py-4">
+            <div data-aos="fade-up" data-aos-duration="500" class="row mb-5">
+                <div class="col-6 mx-auto">
+                    <div class="text-center">
+                        <p class="text-white-50 mb-2 fw-normal text-uppercase">What pets say about our shop</p>
+                        <h1 class="fw-bold display-5">Clients Testimonials</h1>
+                        <span class="bg-danger px-5 mx-auto d-flex pb-2 justify-content-center col-1 rounded-pill"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4 col-12">
+                    <div class="card bg-transparent border-0 rounded-0 text-center p-4 h-100" data-aos="fade-up" data-aos-duration="1300">
+                        <img src="/img/team/member-1.jpg" alt="testimonial" class="img-fluid rounded-circle d-block mx-auto testimonial-img">
+                        <div class="card-body mt-3">
+                            <p class="card-title lead">Vestibulum commodo sapien non elit porttitor, vitae volutpat nibh mollis porta risus id neque.</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <p class="text-danger mb-0">Glen Sparkle, MIAMI</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12">
+                    <div class="card bg-transparent border-0 rounded-0 text-center p-4 h-100" data-aos="fade-up" data-aos-duration="1300">
+                        <img src="/img/team/member-2.jpg" alt="testimonial" class="img-fluid rounded-circle d-block mx-auto testimonial-img">
+                        <div class="card-body mt-3">
+                            <p class="card-title lead">Vestibulum commodo sapien non elit porttitor, vitae volutpat nibh mollis. Nulla id neque.</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <p class="text-danger mb-0">Glenda Richards, CALIFORNIA</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12">
+                    <div class="card bg-transparent border-0 rounded-0 text-center p-4 h-100" data-aos="fade-up" data-aos-duration="1300">
+                        <img src="/img/team/member-3.jpg" alt="testimonial" class="img-fluid rounded-circle d-block mx-auto testimonial-img">
+                        <div class="card-body mt-3">
+                            <p class="card-title lead">Vestibulum commodo sapien non elit porttitor, vitae volutpat nibh mollis. Nulla porta risus.</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <p class="text-danger mb-0">Sue Sparkle, NY</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Popular articles about pets -->
+    <div class="py-5 bg-light">
+        <div class="container py-4">
+            <div data-aos="fade-up" data-aos-duration="500" class="row mb-5">
+                <div class="col-6 mx-auto">
+                    <div class="text-center">
+                        <p class="text-secondary-emphasis mb-2 fw-normal text-uppercase">WHAT TO READ</p>
+                        <h1 class="fw-bold display-5">Popular articles</h1>
+                        <span class="bg-danger px-5 mx-auto d-flex pb-2 justify-content-center col-1 rounded-pill"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="card bg-transparent border-0 rounded-5 zoom-img overflow-hidden" data-aos="zoom-in" data-aos-duration="1000">
+                        <a href="#" class="overflow-hidden rounded-5"> <img src="/img/articles/articles-1.jpg" class="card-img-top rounded-5" alt="articles"> </a>
+                        <div class="card-body px-0">
+                            <a href="#"> <h5 class="card-title fw-bold pb-2">Dapibus Ultrices Iaculis Nunc Commodo</h5> </a>
+                            <p class="card-text"><small class="text-secondary">DECEMBER 2, 2024</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="card bg-transparent border-0 rounded-5 zoom-img overflow-hidden" data-aos="zoom-in" data-aos-duration="1000">
+                        <a href="#" class="overflow-hidden rounded-5"> <img src="/img/articles/articles-2.jpg" class="card-img-top rounded-5" alt="articles"> </a>
+                        <div class="card-body px-0">
+                            <a href="#"> <h5 class="card-title fw-bold pb-2">Aliquet Porttitor Lacusuctus Accumsan</h5> </a>
+                            <p class="card-text"><small class="text-secondary">DECEMBER 2, 2024</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="card bg-transparent border-0 rounded-5 zoom-img overflow-hidden" data-aos="zoom-in" data-aos-duration="1000">
+                        <a href="#" class="overflow-hidden rounded-5"> <img src="/img/articles/articles-3.jpg" class="card-img-top rounded-5" alt="articles"> </a>
+                        <div class="card-body px-0">
+                            <a href="#"> <h5 class="card-title fw-bold pb-2">Elementum Tempus Egestas Suspendisse</h5> </a>
+                            <p class="card-text"><small class="text-secondary">DECEMBER 2, 2024</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="card bg-transparent border-0 rounded-5 zoom-img overflow-hidden" data-aos="zoom-in" data-aos-duration="1000">
+                        <a href="#" class="overflow-hidden rounded-5"> <img src="/img/articles/articles-4.jpg" class="card-img-top rounded-5" alt="articles"> </a>
+                        <div class="card-body px-0">
+                            <a href="#"> <h5 class="card-title fw-bold pb-2">Dignissim Cras Tincidunt Lobortis</h5> </a>
+                            <p class="card-text"><small class="text-secondary">DECEMBER 2, 2024</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- New Product arrival -->
+    <div class="py-5">
+        <div class="container py-4">
+            <div data-aos="fade-up" data-aos-duration="500" class="row mb-5">
+                <div class="col-6 mx-auto">
+                    <div class="text-center">
+                        <p class="text-secondary-emphasis mb-2 fw-normal text-uppercase">ALL-TIME FAVOURITE</p>
+                        <h1 class="fw-bold display-5">New Products Arrival</h1>
+                        <span class="bg-danger px-5 mx-auto d-flex pb-2 justify-content-center col-1 rounded-pill"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card bg-transparent border-0 rounded-0 text-center zoom-img" data-aos="zoom-in" data-aos-duration="1000">
+                        <a href="#" class="position-relative">
+                            <div class="overflow-hidden rounded-5">
+                                <img src="/img/new-products/product-1.jpg" class="card-img-top rounded-5" alt="new-product"> <span class="badge text-bg-danger rounded-pill p-2 m-3 position-absolute start-0">SALE</span>
+                            </div>
+                        </a>
+                        <div class="card-body">
+                            <a href="#"> <h5 class="card-title fw-bold pb-2">Felis Bibendum</h5> </a>
+                            <p class="card-text fw-semibold text-danger mb-1">$30.00 <del class="small fw-normal text-secondary-emphasis">$45.00</del></p>
+                            <small class="card-text">Feed</small>
+                        </div>
+                        <div class="card-footer bg-transparent border-0"><a href="#" class="btn btn-danger rounded-pill py-2 px-4">Add to cart</a></div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card bg-transparent border-0 rounded-0 text-center zoom-img" data-aos="zoom-in" data-aos-duration="1000">
+                        <div class="overflow-hidden rounded-5">
+                            <img src="/img/new-products/product-2.jpg" class="card-img-top rounded-5" alt="new-product">
+                        </div>
+                        <div class="card-body">
+                            <a href="#"> <h5 class="card-title fw-bold pb-2">Integer Malesuada</h5> </a>
+                            <p class="card-text fw-semibold text-danger mb-1">$15.00</p>
+                            <small class="card-text">Costumes</small>
+                        </div>
+                        <div class="card-footer bg-transparent border-0"><a href="#" class="btn btn-danger rounded-pill py-2 px-4">Add to cart</a></div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card bg-transparent border-0 rounded-0 text-center zoom-img" data-aos="zoom-in" data-aos-duration="1000">
+                        <div class="overflow-hidden rounded-5">
+                            <img src="/img/new-products/product-3.jpg" class="card-img-top rounded-5" alt="new-product">
+                        </div>
+                        <div class="card-body">
+                            <a href="#"> <h5 class="card-title fw-bold pb-2">Posuere Semper</h5> </a>
+                            <p class="card-text fw-semibold text-danger mb-1">$15.00</p>
+                            <small class="card-text">Costumes</small>
+                        </div>
+                        <div class="card-footer bg-transparent border-0"><a href="#" class="btn btn-danger rounded-pill py-2 px-4">Add to cart</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Newsletter Updates -->
+    <div class="py-0 bg-warning-subtle">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="py-5 py-lg-0" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="row align-items-center justify-content-between">
+                            <div class="col-lg-6 col-12">
+                                <div class="text-center text-md-start">
+                                    <div class="mb-4">
+                                        <h1 class="fw-bold text-black">Newsletter Updates</h1>
+                                        <p>Enter your email address below to subscribe to our newsletter.</p>
+                                    </div>
+                                    <form class="d-grid d-md-flex gap-3">
+                                        <input class="form-control rounded-pill py-3 px-4 shadow-none border-0" type="text" placeholder="Email address" aria-label="email">
+                                        <button class="btn btn-danger rounded-pill py-2 px-5">Subscribe</button>
+                                    </form>
+                                    <p class="text-secondary-emphasis pt-3 mb-0">Your privacy is our policy.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-12 d-none d-lg-block">
+                                <img src="/img/newsletter.png" alt="newsletter-dog" class="img-fluid mt-n6">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer class="bg-footer text-white">
+        <div class="container py-5 top-footer">
+            <div class="row g-4 py-4">
+                <div class="col-lg-3">
+                    <h5 class="fw-bold pb-3">Categories</h5>
+                    <ul class="list-unstyled d-grid gap-2 text-white-50">
+                        <li class="text-secondary-emphasis"><a href="#">Costumers</a> (5)</li>
+                        <li class="text-secondary-emphasis"><a href="#">Food</a> (3)</li>
+                        <li class="text-secondary-emphasis"><a href="#">Toys</a> (3)</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <h5 class="fw-bold pb-3">Contacts</h5>
+                    <ul class="list-unstyled d-grid gap-2 text-white-50">
+                        <li>Phone: +1800-964-152</li>
+                        <li>Fax: +1800-964-152</li>
+                        <li>Email: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="eb8e938a869b878eab8c868a8287c5888486">[email&#160;protected]</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-12">
+                    <h5 class="fw-bold pb-3">Opening Hours</h5>
+                    <ul class="list-unstyled d-grid gap-2 text-white-50">
+                        <li>Mon - Fri: 10am - 8pm</li>
+                        <li>Sat: 10am - 4pm</li>
+                        <li>Sun: 10am - 6pm</li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-12 ps-lg-5">
+                    <div class="mb-4">
+                        <h5 class="fw-bold pb-3">Sign up for our newsletter</h5>
+                        <p class="text-white-50">Get the latest deals and offers right to your inbox.</p>
+                    </div>
+                    <form class="d-flex overflow-hidden rounded-pill">
+                        <input class="form-control border-0 rounded-0 py-2 px-4" type="text" placeholder="Enter Email Address" aria-label="subscribe"> <button class="btn btn-danger rounded-0 py-2 px-4" type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="border-white border-top border-opacity-25 py-4 footer-app">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-auto">
+                        <div class="d-flex align-items-center gap-3">
+                            <p class="m-0 text-white-50 small pe-2">Payment Partners</p>
+                            <div class="d-flex align-items-center gap-3">
+                                <i class="ri-paypal-line"></i> <i class="ri-visa-line fs-3"></i> <i class="ri-mastercard-line"></i> <i class="ri-bit-coin-line"></i> <i class="ri-bank-card-line"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="d-flex align-items-center justify-content-end gap-2">
+                            <p class="m-0 text-white-50 small pe-2">Get deliveries with App</p>
+                            <div class="d-flex align-items-center gap-3">
+                                <a class="text-white" href="#"><i class="ri-apple-line"></i></a> <a class="text-white" href="#"><i class="ri-google-play-line"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-light py-4 footer-copyright">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-auto">
+                        <p class="text-center text-muted m-0">Copyright © <a href="#" class="text-black">Website Name</a> 2025</p>
+                    </div>
+                    <div class="col-auto">
+                        <div class="d-flex align-items-center gap-3 social-links">
+                            <p class="m-0 text-muted pe-1">Follow us</p>
+                            <a href="#" class="link-secondary"><i class="ri-facebook-circle-fill"></i></a> <a href="#" class="link-secondary"><i class="ri-twitter-fill"></i></a>
+                            <a href="#" class="link-secondary"><i class="ri-instagram-fill"></i></a> <a href="#" class="link-secondary"><i class="ri-mail-fill"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--nav Sidebar -->
+    <div class="offcanvas offcanvas-end bg-dark border-0 text-white" tabindex="-1" id="sidebar">
+        <div class="offcanvas-header d-flex justify-content-between">
+            <div class="position-relative d-flex align-items-center gap-2 site-brand">
+                <i class="ri-baidu-line fs-2 lh-1 text-white"></i>
+                <div class="lh-1">
+                    <h5 class="fw-bold m-0 text-white">The Crazy</h5>
+                    <small class="text-white-50">Cats</small>
+                </div>
+                <a class="stretched-link" href="/Home/Index"></a>
+            </div>
+            <a href="#" class="text-white" data-bs-dismiss="offcanvas" aria-label="Close"><i class="ri-close-line ri-lg"></i></a>
+        </div>
+        <div class="offcanvas-body">
+            <div class="sidebar-nav">
+                <ul class="navbar-nav justify-content-end flex-grow-1">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/Home/Index"><i class="ri-apps-2-line"></i> Home</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="/About/Details">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Donation/Donation">Donations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Contact/Contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Bootsrap Bundle Js -->
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="~/vender/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Jquery Js -->
+    <script src="~/vender/jquery/jquery-3.6.4.min.js"></script>
+    <!-- AOS Js -->
+    @* <script src="vender/aos/dist/aos.js"></script> *@
+    <!-- Custom Js -->
+    <script src="~/js/script.js"></script>
+</body>
+</html>
